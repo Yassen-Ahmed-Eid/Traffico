@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info Traffic-Light</title>
+    <link href="templatemo-nexus-style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!--
+
+TemplateMo 594 nexus flow
+
+https://templatemo.com/tm-594-nexus-flow
+
+-->
+</head>
+<body id="top">
+    <!-- Enhanced Background Elements -->
+    <div class="cyber-bg">
+        <div class="cyber-gradient"></div>
+        <div class="matrix-rain" id="matrixRain"></div>
+    </div>
+    
+    <div class="particles" id="particlesContainer"></div>
+    
+    <div class="data-streams" id="dataStreams"></div>
+    
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+    
+    <div class="grid-overlay">
+        <div class="grid-lines"></div>
+        <div class="grid-glow"></div>
+    </div>
+    
+    <div class="scanlines"></div>
+    <div class="noise-overlay"></div>
+    
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#top" class="logo">Traffico</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Problem.html">problem</a></li>
+                <li><a href="Solution.html">Solution</a></li>
+                <li><a href="Info.html" style="color: cyan; text-shadow: 0 0 20px rgba(0,255,255,0.8), 0 0 40px rgba(0,255,255,0.4); font-weight: bold;">More Info</a></li>
+                <li><a href="Team.html">Team</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-bottom">
+                <a href="Initialize System.html" class="cyber-button">Initialize System</a>
+            </div>
+            <button class="mobile-menu-button" id="mobileMenuBtn">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+        </div>
+    </nav>
+<!-- Mobile Menu -->
+<div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-header">
+    <a href="#top" class="mobile-menu-logo">Traffico_</a>
+    <button class="mobile-menu-close" id="mobileMenuClose">✕</button>
+  </div>
+
+  <nav class="mobile-menu-nav">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Problem.html">problem</a></li>
+                <li><a href="Solution.html">Solution</a></li>
+                <li><a href="Info.html" style="color: cyan;">More Info</a></li>
+                <li><a href="Team.html">Team</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Initialize System.html">Initialize System</a></li>
+
+            </ul>
+  </nav>
+</div>
+<section class="contact fade-up" id="contact">
+  <div class="contact-container">
+    <div class="section-header">
+      <h2 class="section-title">Traffico Informations</h2>
+      <p class="section-subtitle">Here You Can See More Informations</p>
+    </div>
+    <div class="shop-container">
+      <button class="nav-btn prev-btn">&#10094;</button> <!-- زر السابق -->
+
+      <div class="shop-cards">
+        
+        <div class="shop-card">
+          <img src="images/Cyberpunk City Retro Poster.jpeg" alt="Results">
+          <h3>Prior Solution</h3>
+          <p>Analysis of existing systems and how we improved them.</p>
+        </div>
+        <div class="shop-card">
+          <img src="images/Cyberpunk City Retro Poster.jpeg" alt="Results">
+          <h3>Prototype</h3>
+          <p>Our working model that demonstrates the system in action.</p>
+        </div>
+
+        <div class="shop-card">
+          <img src="images/Cyberpunk City Retro Poster.jpeg" alt="Results">
+          <h3>Prior Solution</h3>
+          <p>Analysis of existing systems and how we improved them.</p>
+        </div>
+
+
+        <div class="shop-card">
+          <img src="images/Cyberpunk City Retro Poster.jpeg" alt="Results">
+          <h3>Scientific Background</h3>
+          <p>The scientific principles behind our innovation.</p>
+        </div>
+        <div class="shop-card">
+          <img src="images/Cyberpunk City Retro Poster.jpeg" alt="Results">
+          <h3>Prototype</h3>
+          <p>Our working model that demonstrates the system in action.</p>
+        </div>
+        <div class="shop-card">
+          <img src="images/Cyberpunk City Retro Poster.jpeg" alt="Results">
+          <h3>Prior Solution</h3>
+          <p>Analysis of existing systems and how we improved them.</p>
+        </div>
+
+        <div class="shop-card">
+          <img src="images/Cyberpunk City Retro Poster.jpeg" alt="Results">
+          <h3>System Design</h3>
+          <p>Detailed blueprint and architecture of our system.</p>
+        </div>
+        <div class="shop-card">
+          <img src="images/Cyberpunk City Retro Poster.jpeg" alt="Results">
+          <h3>Prototype</h3>
+          <p>Our working model that demonstrates the system in action.</p>
+        </div>
+        <div class="shop-card">
+          <img src="images/Cyberpunk City Retro Poster.jpeg" alt="Results">
+          <h3>Results</h3>
+          <p>Performance and outcomes of our implemented system.</p>
+        </div>
+      </div>
+
+      <button class="nav-btn next-btn">&#10095;</button> <!-- زر التالي -->
+    </div>
+  </section>
+
+  <!-- JavaScript هنا -->
+  <script>
+    // اختيار العناصر من الـ DOM
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    const shopCards = document.querySelector('.shop-cards');
+    const cards = document.querySelectorAll('.shop-card');
+    const totalCards = cards.length; // عدد الكروت الكلي (5)
+    let currentIndex = 0; // الفهرس الحالي (يبدأ من 0)
+
+    // دالة تحديث السلايدر (تحسب العرض والحركة)
+    function updateSlider() {
+      const cardWidth = cards[0].offsetWidth; // عرض الكارت الحقيقي بعد الرسم
+      const gap = 80; // الفجوة من CSS
+      const moveAmount = cardWidth + gap; // المسافة لكل حركة (كارت + فجوة)
+      let visibleCards = 3; // عدد الكروت المرئية (افتراضي 3)
+
+      // تحديد عدد الكروت بناءً على حجم الشاشة
+      if (window.innerWidth <= 600) {
+        visibleCards = 1;
+      } else if (window.innerWidth <= 992) {
+        visibleCards = 2;
+      }
+
+      const maxIndex = Math.max(0, totalCards - visibleCards); // الفهرس الأقصى (عشان ما يخرجش)
+
+      // إذا كان الفهرس الحالي كبير، عدله
+      if (currentIndex > maxIndex) {
+        currentIndex = maxIndex;
+      }
+
+      // تطبيق التحويل (الانتقال)
+      shopCards.style.transform = `translateX(-${currentIndex * moveAmount}px)`;
+
+      // حفظ البيانات في window عشان الاستخدام في الأزرار
+      window.sliderData = { moveAmount, maxIndex };
+
+      console.log(`Slider updated: cardWidth=${cardWidth}, moveAmount=${moveAmount}, visibleCards=${visibleCards}, currentIndex=${currentIndex}`);
+    }
+
+    // دالة تحديث التحويل فقط (بعد الضغط)
+    function updateTransform() {
+      const moveAmount = window.sliderData.moveAmount;
+      shopCards.style.transform = `translateX(-${currentIndex * moveAmount}px)`;
+      console.log(`Moved to index: ${currentIndex}`);
+    }
+
+    // حدث الضغط على زر السابق
+    prevBtn.addEventListener('click', () => {
+      console.log('Prev clicked');
+      if (currentIndex > 0) { // لو مش في البداية
+        currentIndex--; // قلل الفهرس
+        updateTransform(); // حرك
+      }
+    });
+
+    // حدث الضغط على زر التالي
+    nextBtn.addEventListener('click', () => {
+      console.log('Next clicked');
+      if (currentIndex < window.sliderData.maxIndex) { // لو مش في النهاية
+        currentIndex++; // زد الفهرس
+        updateTransform(); // حرك
+      }
+    });
+
+    // استدعاء الدالة عند التحميل وتغيير الحجم
+    window.addEventListener('load', updateSlider);
+    window.addEventListener('resize', updateSlider);
+  </script>
+
+
+    <!-- Footer -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-links">
+      <a href="#about">About Project</a>
+      <span class="footer-separator">•</span>
+      <a href="#features">Core Systems</a>
+      <span class="footer-separator">•</span>
+      <a href="#dashboard">Dashboard</a>
+      <span class="footer-separator">•</span>
+      <a href="#contact">Contact Us</a>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Smart Road System. All rights reserved.</p>
+      <p class="footer-credit">
+        Developed by 
+        <strong class="rotating-names">
+          <span class="name active">Yassen Ahmed</span>
+          <span class="name">& Yousef Ashraf</span>
+          <span class="name">& AbdElrhman Elshabory</span>
+        </strong> 🚦 | Powered by 
+        <a href="https://getbootstrap.com/" target="_blank" rel="noopener">Traffico</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+    <script src="templatemo-nexus-scripts.js"></script>
+</body>
+</html>
+<script>

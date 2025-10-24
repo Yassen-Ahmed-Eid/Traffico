@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic-Light</title>
+    <link href="templatemo-nexus-style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!--
+
+TemplateMo 594 nexus flow
+
+https://templatemo.com/tm-594-nexus-flow
+
+-->
+</head>
+<body id="top">
+    <!-- Enhanced Background Elements -->
+    <div class="cyber-bg">
+        <div class="cyber-gradient"></div>
+        <div class="matrix-rain" id="matrixRain"></div>
+    </div>
+    
+    <div class="particles" id="particlesContainer"></div>
+    
+    <div class="data-streams" id="dataStreams"></div>
+    
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+    
+    <div class="grid-overlay">
+        <div class="grid-lines"></div>
+        <div class="grid-glow"></div>
+    </div>
+    
+    <div class="scanlines"></div>
+    <div class="noise-overlay"></div>
+    
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#top" class="logo">Traffico</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+<li><a href="Problem.html" style="color: #00ffff; text-shadow: 0 0 25px rgba(0,255,255,1), 0 0 50px rgba(0,255,255,0.6); font-weight: bold;">Problem</a></li>
+                <li><a href="Solution.html">Solution</a></li>
+                <li><a href="Info.html">More Info</a></li>
+                <li><a href="Team.html">Team</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-bottom">
+                <a href="Initialize System.html" class="cyber-button">Initialize System</a>
+            </div>
+            <button class="mobile-menu-button" id="mobileMenuBtn">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <a href="#top" class="mobile-menu-logo">Traffico</a>
+            <button class="mobile-menu-close" id="mobileMenuClose">✕</button>
+        </div>
+        <div class="mobile-menu-cta">
+            <a href="#" class="cyber-button">Initialize System</a>
+        </div>
+        <nav class="mobile-menu-nav">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html" >About</a></li>
+                <li><a href="Problem.html"style="color: cyan;">problem</a></li>
+                <li><a href="Solution.html">Solution</a></li>
+                <li><a href="Info.html">More Info</a></li>
+                <li><a href="Team.html">Team</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Initialize System.html">Initialize System</a></li>
+
+            </ul>
+        </nav>
+    </div>
+
+</section>
+<section class="contact fade-up" id="contact">
+    <div class="contact-container">
+        <div class="section-header">
+            <h2 class="section-title">Traffico Problem</h2>
+            <p class="section-subtitle">Here You Can See The Challenge Face Us</p>
+        </div>
+<section class="about-section">
+  <div class="about-container">
+    <div class="about-text">
+      <h2>The Problem</h2>
+      <p>
+        Traffic congestion has become one of the most serious issues in our modern world.  
+        Every day, millions of vehicles waste hours stuck on the road — leading to lost time, higher fuel consumption, and severe air pollution.  
+        This not only harms the environment but also affects our daily lives, health, and economy.  
+        Traditional traffic systems can’t adapt fast enough to these changes, which is why smart, automated solutions are urgently needed to make transportation cleaner, faster, and more sustainable.
+      </p>
+
+    </div>
+    <div class="about-image">
+      <img src="images/Tokyo neon city.jpeg" alt="Smart road system illustration">
+    </div>
+        </div>
+            </div>
+
+
+  </div>
+</section>
+
+    <!-- Footer -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-links">
+      <a href="#about">About Project</a>
+      <span class="footer-separator">•</span>
+      <a href="#features">Core Systems</a>
+      <span class="footer-separator">•</span>
+      <a href="#dashboard">Dashboard</a>
+      <span class="footer-separator">•</span>
+      <a href="#contact">Contact Us</a>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Smart Road System. All rights reserved.</p>
+      <p class="footer-credit">
+        Developed by 
+        <strong class="rotating-names">
+          <span class="name active">Yassen Ahmed</span>
+          <span class="name">& Yousef Ashraf</span>
+          <span class="name">& AbdElrhman Elshabory</span>
+        </strong> 🚦 | Powered by 
+        <a href="https://getbootstrap.com/" target="_blank" rel="noopener">Traffico</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="templatemo-nexus-scripts.js"></script>
+</body>
+</html>
+        <script>
+  const names = document.querySelectorAll('.rotating-names .name');
+  let current = 0;
+
+  setInterval(() => {
+    names[current].classList.remove('active');
+    current = (current + 1) % names.length;
+    names[current].classList.add('active');
+  }, 2500); // كل 2.5 ثانية بيتبدل الاسم
+</script>
